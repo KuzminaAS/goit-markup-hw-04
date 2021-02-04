@@ -37,6 +37,7 @@
   background: var(--background-color);
   letter-spacing: 0.06rem;
   outline: 2px solid tomato;
+  background-image: url('../images/optimaze-img/Img.jpg');
 }
 .hero-content {
   display: flex;
