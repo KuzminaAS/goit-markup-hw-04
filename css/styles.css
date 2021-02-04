@@ -29,31 +29,26 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
 }
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
   background: var(--background-color);
   letter-spacing: 0.06rem;
-  outline: 2px solid tomato;
   background-image: url('../images/optimaze-img/Img.jpg');
 }
 .hero-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 0 auto;
+  max-width: 696px;
+  text-align: center;
 }
 
 .hero .hero-title {
-  margin: 0 auto;
-  max-width: 696px;
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-transform: uppercase;
-  text-align: center;
 }
 .hero .main-button {
   margin-top: 30px;
@@ -75,6 +70,11 @@
   display: flex;
   align-items: center;
   padding: 0px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+.feature-item {
+  font-weight: 400;
+  margin-right: 30px;
 }
 .feature-list .title {
   margin: 0;
@@ -86,9 +86,6 @@
   text-align: left;
 }
 .feature-list p {
-  padding-right: 30px;
-  margin: 0;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
@@ -100,16 +97,18 @@
   line-height: 1.16;
   text-align: center;
 }
+.section-about {
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
 .list-images {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  padding-top: 50px;
-  padding-bottom: 94px;
 }
 .list-images > .item-img {
   margin-left: 30px;
-  flex-basis: calc(100% / 3- 30px);
+  flex-basis: calc(100% / 3 - 30px);
 }
 .section-team {
   padding-top: 94px;
@@ -123,7 +122,6 @@
   margin-top: -30px;
 }
 .team-list-img {
-  width: 270px;
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
@@ -133,14 +131,13 @@
 }
 .team-cards {
   text-align: center;
-  padding: 30px 59px;
+  padding: 30px 20px;
 }
 .team-list .team {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.87;
-  margin-top: 30px;
 }
 .team-list p {
   font-weight: 400;
@@ -187,7 +184,7 @@
   justify-content: center;
   margin-bottom: 50px;
 }
-.button-items {
+.button-items:not(:last-child){
   margin-left: 8px;
 }
 .site-buttons .button {
@@ -209,13 +206,15 @@
 .portfolio {
   padding: 94px 0px;
 }
+.link-content {
+  display: block;
+}
 .list-content {
   display: flex;
   flex-wrap: wrap;
 }
 .list-content-item {
   max-width: 370px;
-  min-height: 404px;
   margin-top: 30px;
   background: #ffffff;
   border: 1px solid #eeeeee;
